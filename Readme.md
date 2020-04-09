@@ -9,13 +9,7 @@
 J2CL project
 =================
 
-This project includes only a minimal POM defining all J2CL dependencies and numerous properties keeping things neat which may be used within the definition of the 
-[j2cl-maven-plugin](http://github.com/mP1/j2cl-maven-plugin.git).
-
-
-```xml
-<j2cl.version>0.7-SNAPSHOT</j2cl.version>
-```
+This project includes all the required dependencies to compile a J2CL application using the [j2cl-maven-plugin](http://github.com/mP1/j2cl-maven-plugin.git).
 
 
 
