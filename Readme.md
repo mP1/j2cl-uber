@@ -6,7 +6,7 @@
 
 
 
-J2CL project
+j2cl-uber project
 =================
 
 This project includes all the required dependencies to compile a J2CL application using the [j2cl-maven-plugin](http://github.com/mP1/j2cl-maven-plugin.git).
