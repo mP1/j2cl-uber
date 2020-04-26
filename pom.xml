@@ -72,9 +72,33 @@
     </repositories>
 
     <dependencies>
+
+        <!-- scope=provided becomes compile/runtime by walkingkooka:j2cl-maven-plugin and added to classpath etc during building -->
+
         <dependency>
             <groupId>walkingkooka</groupId>
             <artifactId>j2cl-jre-java</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- these are repeated WITHOUT a scope=provided so they will appear at compile/runtime-->
+
+        <dependency>
+            <groupId>com.google.jsinterop</groupId>
+            <artifactId>jsinterop-annotations</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>walkingkooka</groupId>
+            <artifactId>j2cl-gwt-internal-annotations</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>walkingkooka</groupId>
+            <artifactId>jsinterop-base</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
