@@ -73,12 +73,6 @@
         <!-- these are repeated WITHOUT a scope=provided so they will appear at compile/runtime-->
 
         <dependency>
-            <groupId>com.google.jsinterop</groupId>
-            <artifactId>jsinterop-annotations</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.vertispan.j2cl</groupId>
             <artifactId>gwt-internal-annotations</artifactId>
             <version>v20230718-1</version>
@@ -88,6 +82,12 @@
             <groupId>com.vertispan.jsinterop</groupId>
             <artifactId>base</artifactId>
             <version>1.0.1-1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.vertispan.j2cl</groupId>
+                    <artifactId>gwt-internal-annotations</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
