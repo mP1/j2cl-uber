@@ -61,13 +61,12 @@
     </repositories>
 
     <dependencies>
-
         <!-- scope=provided becomes compile/runtime by walkingkooka:j2cl-maven-plugin and added to classpath etc during building -->
 
         <dependency>
-            <groupId>walkingkooka</groupId>
-            <artifactId>j2cl-jre-java</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.vertispan.j2cl</groupId>
+            <artifactId>jre</artifactId>
+            <version>v20230718-1</version>
             <scope>provided</scope>
         </dependency>
 
@@ -80,16 +79,17 @@
         </dependency>
 
         <dependency>
-            <groupId>walkingkooka</groupId>
-            <artifactId>j2cl-gwt-internal-annotations</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.vertispan.j2cl</groupId>
+            <artifactId>gwt-internal-annotations</artifactId>
+            <version>v20230718-1</version>
         </dependency>
 
         <dependency>
-            <groupId>walkingkooka</groupId>
-            <artifactId>jsinterop-base</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.vertispan.jsinterop</groupId>
+            <artifactId>base</artifactId>
+            <version>1.0.1-1</version>
         </dependency>
+
     </dependencies>
 
     <build/>
